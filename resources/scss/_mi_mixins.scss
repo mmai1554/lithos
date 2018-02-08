@@ -154,7 +154,13 @@ $screen-xs-max: $screen-sm-min - 1;
   }
 }
 
-$em-base: 16 !default;
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+$em-base:16px !default;
 // It strips the unit of measure and returns it
 @function strip-unit($num) {
   @return $num / ($num * 0 + 1);
