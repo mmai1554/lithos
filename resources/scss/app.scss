@@ -3,9 +3,10 @@
 $color_white: #FFFFFF;
 $color_black: #2F312F;
 $color_red: #bd1111;
-$color_light_grey:#E6E6E6;
+$color_light_grey: #E6E6E6;
+$color_dark_grey:#555554;
 
-$space1:40px;
+$space1: 40px;
 
 body {
   font-size: 16px;
@@ -38,72 +39,149 @@ h1 {
 a {
   color: $color_red;
   &:hover {
-    color:lighten($color_red, 5%);
+    color: lighten($color_red, 5%);
   }
 }
 
-header {
-  padding-top:20px;
-  margin-bottom:10px;
-  .inner {
-    background-image: url("/img/header_24bit.png");
-    background-position: center 20px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 445px;
+a.anchor {
+  display: block;
+  position: relative;
+  top: -240px;
+  visibility: hidden;
+}
+
+.fix {
+
+}
+
+.outer {
+  .fix-area & {
+    position:fixed;
+    width:1140px;
+    background-color:#FFF;
+    z-index:9999;
+    height:180px;
     @include bp(mobile) {
-      background-position: center 90px;
-      background-size: cover;
-      height: 260px;
+      width:100%;
+      height:240px;
     }
   }
-  .logo {
-    h1 {
-      margin: 0;
-      line-height: 0;
+}
+
+#header {
+  position: relative;
+  height: 520px;
+  overflow: hidden;
+  background-color:$color_white;
+  @include bp(mobile) {
+    height:300px;
+  }
+}
+
+.mi-headerbild {
+  top: 20px;
+  left: 0;
+  width: 100%;
+  height: 440px;
+  position: absolute;
+  background-size: cover;
+  background: url("/img/header_24bit.png") no-repeat 0 0;
+  .fix-area & {
+    @include hide_from_screen;
+  }
+  @include bp(mobile) {
+    visibility: hidden;
+    display:none;
+  }
+}
+
+.mi-slogan {
+  position: absolute;
+  left: 308px;
+  top: 180px;
+  width: 330px;
+  h2 {
+    font-size: em(36);
+    text-transform: uppercase;
+    color: $color_white;
+    hyphens: auto;
+  }
+  .fix-area & {
+    @include hide_from_screen;
+  }
+  @include bp(mobile) {
+    position:relative;
+    padding:5px;
+    top:0;
+    left:0;
+    width:100%;
+    h2 {
+      font-size: em(24);
+      color: $color_black;
+      hyphens: none;
+      text-align: center;
+      margin:0;
     }
+  }
+}
+
+.mi-logo {
+  position: absolute;
+  left: 300px;
+  h1 {
+    margin: 0;
+    line-height: 0;
+  }
+  @include bp(mobile) {
+    position: static;
+    img {
+      display: table;
+      margin: 0 auto;
+    }
+  }
+  .fix-area & {
     @include bp(mobile) {
+      position: fixed;
       img {
         display: table;
         margin: 0 auto;
       }
     }
-  }
-  .slogan {
-    h2 {
-      padding-top: 70px;
-      font-size: 36px;
-      text-transform: uppercase;
-      hyphens: auto;
-      color: $color_white;
-      width: 330px;
-      @include bp(mobile) {
-        padding-top: 80px;
-        display: block;
-        margin: 0px auto;
-        font-size: em(32);
-        text-align: center;
-      }
-    }
+    left:50%;
+    margin-left:-137.5px
   }
 }
 
-.navbar-nav {
-  @extend .font-ropa;
+.mi-nav {
+  background-color:$color_white;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  position: absolute;
+  // top: 460px;
+  bottom:0;
+  left: 0;
   width: 100%;
-  text-align: center;
-  a {
-    &:hover {
-      //text-decoration: underline !important;
-      //background-color:transparent !important;
-    }
-    color: $color_black;
+  box-sizing: border-box;
+  .fix-area & {
+    bottom:10px;
   }
-  & > li {
-    font-size: 24px;
-    text-transform: uppercase;
+  .navbar-nav {
     float: none;
-    display: inline-block;
+    @extend .font-ropa;
+    text-align: center;
+    a {
+      &:hover {
+        //text-decoration: underline !important;
+        //background-color:transparent !important;
+      }
+      color: $color_black;
+    }
+    & > li {
+      font-size: 24px;
+      text-transform: uppercase;
+      float: none;
+      display: inline-block;
+    }
   }
 }
 
@@ -147,7 +225,7 @@ section {
     color: $color_white;
   }
   h3 {
-    padding:$space1 0;
+    padding: $space1 0;
     font-size: em(36);
   }
   background-color: $color_red;
@@ -178,7 +256,7 @@ section {
 
 .anwender {
   img {
-    margin-bottom:$space1;
+    margin-bottom: $space1;
   }
   p {
     text-align: left;
@@ -195,9 +273,9 @@ section {
     font-weight: bold;
   }
   @include bp(mobile) {
-    padding-bottom:$space1;
-    margin-bottom:$space1;
-    border-bottom:1px solid #CCC;
+    padding-bottom: $space1;
+    margin-bottom: $space1;
+    border-bottom: 1px solid #CCC;
     .testimony, .address {
       text-align: center;
     }
@@ -229,10 +307,10 @@ section {
 }
 
 .mi-feature {
-  padding:$space1 0;
+  padding: $space1 0;
   h3 {
-    font-size:em(36);
-    color:$color_black;
+    font-size: em(36);
+    color: $color_black;
   }
   li {
     display: block;
@@ -249,32 +327,29 @@ section {
   }
 }
 
-
 // FORMS:
 
 input[type="text"], textarea, textarea.form-control {
-  border-radius:0;
-  background-color:#E6E6E6;
-  width:100%;
+  border-radius: 0;
+  background-color: #E6E6E6;
+  width: 100%;
 }
 
-
 .btn-primary {
-  background-color:$color_red;
+  background-color: $color_red;
   background-image: none;
-  border-color:$color_red;
+  border-color: $color_red;
   &:hover {
-    background-color:lighten($color_red, 5%);
+    background-color: lighten($color_red, 5%);
     background-image: none;
-    border-color:lighten($color_red, 5%);
+    border-color: lighten($color_red, 5%);
   }
 }
 
 .form-control:focus {
-  border-color:$color_red;
+  border-color: $color_red;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
 }
-
 
 .dev1 {
   background-color: #2aabd2;
