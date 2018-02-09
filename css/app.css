@@ -9,6 +9,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: normal; }
 h1 { font-size: 2.25em; }
 
 a { color: #bd1111; }
+a:hover { color: #d41313; }
 
 header { padding-top: 20px; margin-bottom: 10px; }
 header .inner { background-image: url("/img/header_24bit.png"); background-position: center 20px; background-size: contain; background-repeat: no-repeat; height: 445px; }
@@ -34,7 +35,7 @@ section h4 { color: #bd1111; font-size: 1.5em; text-transform: uppercase; }
 
 .redblock { padding: 0 0 40px 0; background-color: #bd1111; }
 .redblock h1, .redblock h2, .redblock h3, .redblock h4, .redblock h5, .redblock h6, .redblock p, .redblock li, .redblock a { color: #FFFFFF; }
-.redblock h3 { padding-top: 40px; padding-bottom: 40px; font-size: 2.25em; }
+.redblock h3 { padding: 40px 0; font-size: 2.25em; }
 .redblock li { display: block; list-style-type: none; margin-bottom: 7px; }
 .redblock ul:first-child > li:before { content: "\e072"; font-family: 'Glyphicons Halflings'; font-size: 9px; float: left; margin-top: 5px; margin-left: -17px; }
 .redblock ul ul { padding-left: 10px; }
@@ -54,7 +55,19 @@ section h4 { color: #bd1111; font-size: 1.5em; text-transform: uppercase; }
 .mi-bgrubin { height: 460px; background-image: url("/img/rubin_bg_grau.png"); background-position: center; background-repeat: no-repeat; background-size: contain; }
 .mi-bgrubin .rubin-inside { padding-top: 20px; }
 
-#kompetenz .job { font-weight: bold; }
+.mi-job { font-weight: bold; }
+
+.mi-feature { padding: 40px 0; }
+.mi-feature h3 { font-size: 2.25em; color: #2F312F; }
+.mi-feature li { display: block; list-style-type: none; margin-bottom: 7px; }
+.mi-feature ul > li:before { content: "\e072"; font-family: 'Glyphicons Halflings'; font-size: 9px; float: left; margin-top: 5px; margin-left: -17px; }
+
+input[type="text"], textarea, textarea.form-control { border-radius: 0; background-color: #E6E6E6; width: 100%; }
+
+.btn-primary { background-color: #bd1111; background-image: none; border-color: #bd1111; }
+.btn-primary:hover { background-color: #d41313; background-image: none; border-color: #d41313; }
+
+.form-control:focus { border-color: #bd1111; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6); }
 
 .dev1 { background-color: #2aabd2; border: 1px solid #2b669a; }
 
