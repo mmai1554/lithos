@@ -24,6 +24,7 @@ section { margin: 40px 0 60px 0; }
 section h1, section h2, section h3, section h4, section h5, section h6, section p { text-align: center; }
 section img { display: table; margin: 0 auto; }
 section h2 { font-size: 2.25em; color: #bd1111; padding-bottom: 60px; text-align: center; background-image: url("/img/divider_rubin.png"); background-position: center bottom; background-repeat: no-repeat; margin-bottom: 40px; }
+section h4 { color: #bd1111; font-size: 1.5em; text-transform: uppercase; }
 
 .spacer1 { height: 40px; }
 
@@ -39,7 +40,20 @@ section h2 { font-size: 2.25em; color: #bd1111; padding-bottom: 60px; text-align
 
 .anwender img { margin-bottom: 40px; }
 .anwender p { text-align: left; }
-.anwender h4 { color: #bd1111; font-size: 1.5em; }
 .anwender .subtitle { text-align: center; color: #bd1111; margin-bottom: 50px; }
 .anwender a[href^="mailto:"] { color: #2F312F; }
 .anwender .name { font-weight: bold; }
+
+.mi-row-equal-height { display: table; }
+.mi-row-equal-height .mi-panel { float: none; display: table-cell; vertical-align: top; }
+
+.mi-bgrubin { height: 460px; background-image: url("/img/rubin_bg_grau.png"); background-position: center; background-repeat: no-repeat; background-size: contain; }
+.mi-bgrubin .rubin-inside { padding-top: 20px; }
+
+#kompetenz .job { font-weight: bold; }
+
+.dev1 { background-color: #2aabd2; border: 1px solid #2b669a; }
+
+.devborder1 { border: 1px solid green; }
+
+.devborder2 { border: 1px solid yellow; }
