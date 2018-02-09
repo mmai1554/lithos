@@ -1,5 +1,7 @@
 body { font-size: 16px; background-color: #FFFFFF; color: #2F312F; font-family: 'Source Sans Pro', sans-serif; }
 
+@media (max-width: 767px) { img { display: block; max-width: 100%; height: auto; } }
+
 .font-ropa, h1, h2, h3, h4, h5, h6, .navbar-nav { font-family: 'Ropa Sans', sans-serif; }
 
 h1, h2, h3, h4, h5, h6 { font-weight: normal; }
@@ -43,6 +45,8 @@ section h4 { color: #bd1111; font-size: 1.5em; text-transform: uppercase; }
 .anwender .subtitle { text-align: center; color: #bd1111; margin-bottom: 50px; }
 .anwender a[href^="mailto:"] { color: #2F312F; }
 .anwender .name { font-weight: bold; }
+@media (max-width: 767px) { .anwender { padding-bottom: 40px; margin-bottom: 40px; border-bottom: 1px solid #CCC; }
+  .anwender .testimony, .anwender .address { text-align: center; } }
 
 .mi-row-equal-height { display: table; }
 .mi-row-equal-height .mi-panel { float: none; display: table-cell; vertical-align: top; }
