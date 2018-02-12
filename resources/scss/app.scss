@@ -270,11 +270,22 @@ section {
   }
   p {
     text-align: left;
+    @include bp(tablet) {
+      text-align: center;
+      .testimony, .address {
+        text-align: center;
+      }
+    }
+    @include bp(mobile) {
+      text-align: center;
+    }
   }
   .subtitle {
     text-align: center;
     color: $color_red;
-    margin-bottom: 50px;
+    @include bp(desktop) {
+      margin-bottom:$space1;
+    }
   }
   a[href^="mailto:"] {
     color: $color_black;
@@ -289,6 +300,10 @@ section {
     .testimony, .address {
       text-align: center;
     }
+  }
+  @include bp(tablet) {
+    padding-bottom: $space1;
+    margin-bottom: $space1;
   }
 }
 

@@ -68,11 +68,16 @@ section h4 { color: #bd1111; font-size: 1.5em; text-transform: uppercase; }
 
 .anwender img { margin-bottom: 40px; }
 .anwender p { text-align: left; }
-.anwender .subtitle { text-align: center; color: #bd1111; margin-bottom: 50px; }
+@media (min-width: 768px) and (max-width: 991px) { .anwender p { text-align: center; }
+  .anwender p .testimony, .anwender p .address { text-align: center; } }
+@media (max-width: 767px) { .anwender p { text-align: center; } }
+.anwender .subtitle { text-align: center; color: #bd1111; }
+@media (min-width: 1200px) { .anwender .subtitle { margin-bottom: 40px; } }
 .anwender a[href^="mailto:"] { color: #2F312F; }
 .anwender .name { font-weight: bold; }
 @media (max-width: 767px) { .anwender { padding-bottom: 40px; margin-bottom: 40px; border-bottom: 1px solid #CCC; }
   .anwender .testimony, .anwender .address { text-align: center; } }
+@media (min-width: 768px) and (max-width: 991px) { .anwender { padding-bottom: 40px; margin-bottom: 40px; } }
 
 .mi-row-equal-height { display: table; }
 .mi-row-equal-height .mi-panel { float: none; display: table-cell; vertical-align: top; }
