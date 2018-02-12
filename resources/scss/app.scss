@@ -64,7 +64,7 @@ a.anchor {
     z-index:9999;
     height:180px;
     @include bp(mobile) {
-      height:200px; // Nav wird 2-zeilig
+      height:250px; // Nav wird 2-zeilig
     }
     @include bp(tablet) {
       height:200px; // Nav wird 2-zeilig
@@ -74,11 +74,11 @@ a.anchor {
 
 #header {
   position: relative;
-  height: 520px;
   overflow: hidden;
+  height:520px;
   background-color:$color_white;
   @include bp(mobile) {
-    height:250px;
+    height:300px;
   }
 }
 
@@ -120,11 +120,11 @@ a.anchor {
     left:0;
     width:100%;
     h2 {
-      font-size: em(24);
+      font-size: em(20);
       color: $color_black;
       hyphens: none;
       text-align: center;
-      margin:0;
+      margin:10px 0;
     }
   }
 }
@@ -161,7 +161,6 @@ a.anchor {
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   position: absolute;
-  // top: 460px;
   bottom:0;
   left: 0;
   width: 100%;

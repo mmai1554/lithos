@@ -14,11 +14,11 @@ a:hover { color: #d41313; }
 a.anchor { display: block; position: relative; top: -240px; visibility: hidden; }
 
 .fix-area .outer { width: 100%; left: 0; right: 0; position: fixed; background-color: #FFF; z-index: 9999; height: 180px; }
-@media (max-width: 767px) { .fix-area .outer { height: 200px; } }
+@media (max-width: 767px) { .fix-area .outer { height: 250px; } }
 @media (min-width: 768px) and (max-width: 991px) { .fix-area .outer { height: 200px; } }
 
-#header { position: relative; height: 520px; overflow: hidden; background-color: #FFFFFF; }
-@media (max-width: 767px) { #header { height: 250px; } }
+#header { position: relative; overflow: hidden; height: 520px; background-color: #FFFFFF; }
+@media (max-width: 767px) { #header { height: 300px; } }
 
 .mi-headerbild { top: 20px; left: 0; width: 100%; height: 440px; position: absolute; background-size: cover; background: url("/img/header_24bit.png") no-repeat 0 0; }
 .fix-area .mi-headerbild { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
@@ -30,7 +30,7 @@ a.anchor { display: block; position: relative; top: -240px; visibility: hidden; 
 .fix-area .mi-slogan { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
 .fix-area .mi-slogan.focusable:active, .fix-area .mi-slogan.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
 @media (max-width: 767px) { .mi-slogan { position: relative; padding: 5px; top: 0; left: 0; width: 100%; }
-  .mi-slogan h2 { font-size: 1.5em; color: #2F312F; hyphens: none; text-align: center; margin: 0; } }
+  .mi-slogan h2 { font-size: 1.25em; color: #2F312F; hyphens: none; text-align: center; margin: 10px 0; } }
 
 .mi-logo { position: absolute; left: 300px; }
 .mi-logo h1 { margin: 0; line-height: 0; }
