@@ -14,10 +14,6 @@ HTML5 Projekt. Onepager für Lithos.de. Frontend: HTML, css, javascript für fix
 * [JQuery](https://jquery.org/) - JQuery for sticky header
 * [css compiled with scss ](http://compass-style.org/) - compiled by compass see resources/config.rb
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
 ## Authors
 
 * Project by: sibeth Entertainment Gmbh [www.sibeth.de](http://www.sibeth.de/)
