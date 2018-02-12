@@ -13,11 +13,12 @@ a:hover { color: #d41313; }
 
 a.anchor { display: block; position: relative; top: -240px; visibility: hidden; }
 
-.fix-area .outer { position: fixed; width: 1140px; background-color: #FFF; z-index: 9999; height: 180px; }
-@media (max-width: 767px) { .fix-area .outer { width: 100%; height: 240px; } }
+.fix-area .outer { width: 100%; left: 0; right: 0; position: fixed; background-color: #FFF; z-index: 9999; height: 180px; }
+@media (max-width: 767px) { .fix-area .outer { height: 200px; } }
+@media (min-width: 768px) and (max-width: 991px) { .fix-area .outer { height: 200px; } }
 
 #header { position: relative; height: 520px; overflow: hidden; background-color: #FFFFFF; }
-@media (max-width: 767px) { #header { height: 300px; } }
+@media (max-width: 767px) { #header { height: 250px; } }
 
 .mi-headerbild { top: 20px; left: 0; width: 100%; height: 440px; position: absolute; background-size: cover; background: url("/img/header_24bit.png") no-repeat 0 0; }
 .fix-area .mi-headerbild { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
@@ -43,7 +44,9 @@ a.anchor { display: block; position: relative; top: -240px; visibility: hidden; 
 .fix-area .mi-nav { bottom: 10px; }
 .mi-nav .navbar-nav { float: none; text-align: center; }
 .mi-nav .navbar-nav a { color: #2F312F; }
-.mi-nav .navbar-nav > li { font-size: 24px; text-transform: uppercase; float: none; display: inline-block; }
+.mi-nav .navbar-nav > li { font-size: 1.5em; text-transform: uppercase; float: none; display: inline-block; }
+@media (max-width: 767px) { .mi-nav .navbar-nav > li { font-size: 1.25em; } }
+@media (min-width: 768px) and (max-width: 991px) { .mi-nav .navbar-nav > li { font-size: 1.25em; } }
 
 section { margin: 40px 0 60px 0; }
 section h1, section h2, section h3, section h4, section h5, section h6, section p { text-align: center; }
@@ -55,9 +58,9 @@ section h4 { color: #bd1111; font-size: 1.5em; text-transform: uppercase; }
 
 .spacer2 { height: 80px; }
 
-.redblock { padding: 0 0 40px 0; background-color: #bd1111; }
+.redblock { padding: 0 30px 40px 30px; background-color: #bd1111; }
 .redblock h1, .redblock h2, .redblock h3, .redblock h4, .redblock h5, .redblock h6, .redblock p, .redblock li, .redblock a { color: #FFFFFF; }
-.redblock h3 { padding: 40px 0; font-size: 2.25em; }
+.redblock h3 { padding: 40px 0; font-size: 2em; }
 .redblock li { display: block; list-style-type: none; margin-bottom: 7px; }
 .redblock ul:first-child > li:before { content: "\e072"; font-family: 'Glyphicons Halflings'; font-size: 9px; float: left; margin-top: 5px; margin-left: -17px; }
 .redblock ul ul { padding-left: 10px; }
