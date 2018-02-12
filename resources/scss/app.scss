@@ -312,6 +312,12 @@ section {
       margin-top:0;
     }
   }
+  @include bp(tablet) {
+    margin-top:$space1;
+    &:first-child {
+      margin-top:0;
+    }
+  }
   .rubin-inside {
     @include bp(mobile) {
       background-color:$color_light_grey;
