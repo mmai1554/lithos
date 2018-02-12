@@ -302,15 +302,25 @@ section {
 }
 
 .mi-bgrubin {
-  height: 460px;
-  background-image: url("/img/rubin_bg_grau.png");
-  background-position: center;
-  background-repeat: no-repeat;
+  height:460px;
+  background: url("/img/rubin_bg_grau.png") no-repeat center;
   background-size: contain;
+  @include bp(mobile) {
+    background:none;
+    margin-top:$space1;
+    &:first-child {
+      margin-top:0;
+    }
+  }
   .rubin-inside {
+    @include bp(mobile) {
+      background-color:$color_light_grey;
+      padding-bottom:10px;
+    }
     padding-top: 20px;
   }
 }
+
 
 .mi-job {
   font-weight: bold;
