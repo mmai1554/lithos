@@ -214,10 +214,12 @@ section {
     background-repeat: no-repeat;
     margin-bottom: $space1;
   }
+  h3 {
+    font-size:em(32);
+  }
   h4 {
     color: $color_red;
     font-size: em(24);
-    text-transform: uppercase;
   }
 }
 
@@ -264,9 +266,19 @@ section {
   }
 }
 
+.kompetenz {
+  h4 {
+    text-transform: uppercase;
+  }
+}
+
 .anwender {
   img {
     margin-bottom: $space1;
+  }
+  h4 {
+    text-transform: uppercase;
+    color:$color_red;
   }
   p {
     text-align: left;
@@ -350,7 +362,7 @@ section {
 .mi-feature {
   padding: $space1 0;
   h3 {
-    font-size: em(36);
+    //font-size: em(36);
     color: $color_black;
   }
   li {

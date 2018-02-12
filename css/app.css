@@ -52,7 +52,8 @@ section { margin: 40px 0 60px 0; }
 section h1, section h2, section h3, section h4, section h5, section h6, section p { text-align: center; }
 section img { display: table; margin: 0 auto; }
 section h2 { font-size: 2.25em; color: #bd1111; padding-bottom: 60px; text-align: center; background-image: url("/img/divider_rubin.png"); background-position: center bottom; background-repeat: no-repeat; margin-bottom: 40px; }
-section h4 { color: #bd1111; font-size: 1.5em; text-transform: uppercase; }
+section h3 { font-size: 2em; }
+section h4 { color: #bd1111; font-size: 1.5em; }
 
 .spacer1 { height: 40px; }
 
@@ -66,7 +67,10 @@ section h4 { color: #bd1111; font-size: 1.5em; text-transform: uppercase; }
 .redblock ul ul { padding-left: 10px; }
 .redblock ul ul > li:before { content: "\0b7"; font-size: 10px; float: left; margin-top: 5px; margin-left: -10px; }
 
+.kompetenz h4 { text-transform: uppercase; }
+
 .anwender img { margin-bottom: 40px; }
+.anwender h4 { text-transform: uppercase; color: #bd1111; }
 .anwender p { text-align: left; }
 @media (min-width: 768px) and (max-width: 991px) { .anwender p { text-align: center; }
   .anwender p .testimony, .anwender p .address { text-align: center; } }
@@ -93,7 +97,7 @@ section h4 { color: #bd1111; font-size: 1.5em; text-transform: uppercase; }
 .mi-job { font-weight: bold; }
 
 .mi-feature { padding: 40px 0; }
-.mi-feature h3 { font-size: 2.25em; color: #2F312F; }
+.mi-feature h3 { color: #2F312F; }
 .mi-feature li { display: block; list-style-type: none; margin-bottom: 7px; }
 .mi-feature ul > li:before { content: "\e072"; font-family: 'Glyphicons Halflings'; font-size: 9px; float: left; margin-top: 5px; margin-left: -17px; }
 
